@@ -3,6 +3,10 @@
 const mongoose = require('mongoose');
 const app = require('./app');
 const config = require('./config');
+// Variables de Entorno
+require('dotenv').config({ path: 'variables.env' });
+
+console.log(config.db);
 
 ////////////////////////////////////////////////////////////////////////
 ///////////// Coneccion a la Base de Datos ////////////////////////////
