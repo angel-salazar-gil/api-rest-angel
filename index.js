@@ -12,7 +12,7 @@ console.log(config.db);
 ///////////// Coneccion a la Base de Datos ////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-mongoose.connect(config.db, (err, res) => {
+mongoose.connect('mongodb+srv://angelSalazar:Monoku_6@cluster0-toxjc.mongodb.net/test?retryWrites=true&w=majority', (err, res) => {
     if(err) {
         return console.log(`Error al conectarse a la BD: ${err}`);
     };
