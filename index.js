@@ -12,7 +12,6 @@ console.log(config.db);
 ///////////// Coneccion a la Base de Datos ////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-mongoose.set('useCreateIndex', true);
 /*
 mongoose.connect('mongodb+srv://angelSalazar:Monoku_6@cluster0-toxjc.mongodb.net/api-database?retryWrites=true&w=majority', {
     useUnifiedTopology: true,
@@ -24,6 +23,8 @@ app.listen( config.port, () => {
     console.log(`API REST Corriendo en el puerto ${config.port}`);
 });
 */
+
+mongoose.set('useCreateIndex', true);
 
 mongoose.connect(config.db, (err, res) => {
     if(err) {
