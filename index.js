@@ -26,8 +26,6 @@ app.listen( config.port, () => {
 */
 
 mongoose.connect(config.db, (err, res) => {
-    useUnifiedTopology: true
-    useNewUrlParser: true
     if(err) {
         return console.log(`Error al conectarse a la BD: ${err}`);
     };
