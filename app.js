@@ -18,7 +18,7 @@ app.set('view engine', '.hbs');
 
 app.use('/api', api);
 app.use('/api', api2);
-app.get('/login', (req, res) => {
+app.get('/', (req, res) => {
     res.render('login');
 });
 
