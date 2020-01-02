@@ -13,7 +13,7 @@ console.log(config.db);
 //////////////////////////////////////////////////////////////////////
 
 mongoose.set('useCreateIndex', true);
-
+/*
 mongoose.connect('mongodb+srv://angelSalazar:Monoku_6@cluster0-toxjc.mongodb.net/api-database?retryWrites=true&w=majority', {
     useUnifiedTopology: true,
     useNewUrlParser: true
@@ -23,9 +23,9 @@ console.log('Conectado a la BD ...');
 app.listen( config.port, () => {
     console.log(`API REST Corriendo en el puerto ${config.port}`);
 });
+*/
 
-/*
-mongoose.connect('mongodb+srv://angelSalazar:Monoku_6@cluster0-toxjc.mongodb.net/test?retryWrites=true&w=majority', (err, res) => {
+mongoose.connect(config.db, (err, res) => {
     useUnifiedTopology: true
     useNewUrlParser: true
     if(err) {
@@ -37,4 +37,3 @@ mongoose.connect('mongodb+srv://angelSalazar:Monoku_6@cluster0-toxjc.mongodb.net
         console.log(`API REST Corriendo en el puerto ${config.port}`);
     });
 });
-*/
