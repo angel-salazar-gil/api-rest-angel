@@ -12,7 +12,7 @@ console.log(config.db);
 ///////////// Coneccion a la Base de Datos ////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-function connect(err, res){
+function connect(){
     mongoose.connect('mongodb+srv://angelSalazar:Monoku_6@cluster0-toxjc.mongodb.net/test?retryWrites=true&w=majority', {
         useUnifiedTopology: true,
         useNewUrlParser: true
