@@ -9,7 +9,7 @@ function getBrigada(req, res) {
         if(err) return res.status(500).send({menssage: `Error al realizar la peticion: ${err}`});
         if(!brigadas) return res.status(404).send({menssage: 'La sulicitud no existe'});
 
-        res.status(200).send({ brigadas });
+        res.status(200).send( brigadas );
     });
 };
 
@@ -18,7 +18,7 @@ function getBrigadas(req, res) {
         if(err) return res.status(500).send({menssage: `Error al realizar la peticion: ${err}`});
         if(err) return res.status(404).send({menssage: 'No existen registros en la Base de Datos'});
 
-        res.status(200).send({ brigadas });
+        res.status(200).send( brigadas );
     });
 };
 
