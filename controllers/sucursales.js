@@ -10,7 +10,7 @@ function getSucural(req, res) {
         if(err) return res.status(500).send({menssage: `Error al realizar la peticion: ${err}`});
         if(!sucursales) return res.status(404).send({menssage: 'La solicitud no existe'});
 
-        res.status(200).send({ sucursales });
+        res.status(200).send( sucursales );
     });
 };
 
@@ -19,7 +19,7 @@ function getSucurales(req, res) {
         if(err) return res.status(500).send({menssage: `Error al realizar la peticion: ${err}`});
         if(!sucursales) return res.status(404).send({message: 'No existen registros'});
 
-        res.status(200).send({ sucursales });
+        res.status(200).send( sucursales );
     });
 };
 
