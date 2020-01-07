@@ -6,7 +6,7 @@ const Schema = mongoose.Schema;
 const SucursalSchema = new Schema({
     descripcion: String,
     horario: String,
-    telefono: Number,
+    telefono: String,
     direccion: String,
     imagen: String,
     longitud: String,
