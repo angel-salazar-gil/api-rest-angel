@@ -8,6 +8,7 @@ const SucursalSchema = new Schema({
     horario: String,
     telefono: Number,
     direccion: String,
+    imagen: String,
     longitud: String,
     latitud: String
 });

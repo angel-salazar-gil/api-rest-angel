@@ -8,6 +8,7 @@ const BrigadasSchema = new Schema({
     descripcion: String,
     horario: String,
     direccion: String,
+    imagen: String,
     longitud: String,
     latitud: String
 });
