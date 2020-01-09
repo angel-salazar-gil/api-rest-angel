@@ -24,7 +24,7 @@ function getSucurales(req, res) {
 };
 
 function saveSucursales(req, res) {
-    console.log('POST /api/sucursales');
+    //console.log('POST /api/sucursales');
     console.log(req.body);
 
     let sucursales = new Sucursales();
